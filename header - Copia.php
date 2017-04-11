@@ -3,11 +3,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <meta name="description" content="Descrição">
-        <meta name="keywords" content="Design">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="Daniel André">
 
         <link rel="icon" href="images/logo-invert.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="images/logo-invert.ico" type="image/x-icon" />
@@ -101,15 +96,14 @@
         <div class="container-fluid">
         
         	<!-- Início Header (Conteúdos de cabeçalho) -->
-                <header id="header">                    
+                <div id="header">                    
                     <!-- <div class="container"> -->
                         <!-- <div class="row"> -->
-                            <nav class="nav-menu">
-                            <figure><a href="?pg=home"><img src="images/logo.png" class="logo-header seletor" /></a></figure>
-                                
+                            <div class="nav-menu">
                                 <ul>
+                                    
                                     <!-- <div class="col-3"> -->
-                                        <!-- <li></li> -->
+                                        <li><a href="?pg=home"><img src="images/logo.png" class="logo-header seletor" /></a></li>
                                     <!-- </div> -->
                                     
                                     <!-- <div class="col-9"> -->
@@ -125,27 +119,17 @@
                                     <li><a href="?pg=home#pg3"  id="botao-grande">PORTFOLIO</a></li>
                                     <li><a href="#footer" id="botao">CONTATO</a></li> -->
 
-                           <!--          <li>
+                                    <li>
+                                    <!--<div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">HTML</a></li>
+                                          <li><a href="#">CSS</a></li>
+                                          <li><a href="#">JavaScript</a></li>
+                                        </ul>
+                                    </div -->
                                         <div class="dropdown d-flex justify-content-sm-end">
-
-                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                <i class="fa fa-bars"></i>
-                                                <span class="caret"></span>
-                                            </button>
-
-                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                <li><a href="?pg=home">HOME</a></li>
-                                                <li><a href="?pg=home#pg2">QUEM SOMOS</a></li>
-                                                <li><a href="?pg=home#pg3">PORTFÓLIO</a></li>
-                                                <li><a href="#footer">CONTATO</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </li> -->
-
-                                </ul>
-
-                                <div class="dropdown d-flex justify-content-sm-end">
 
                                             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                                 <i class="fa fa-bars"></i>
@@ -165,7 +149,10 @@
                                                 <li><a href="#footer">CONTATO</a></li>
                                             </ul>
 
-                                </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
 
                                 <!-- <div class="dropdown">
 
@@ -183,7 +170,7 @@
                                             </ul>
 
                                 </div> -->
-                            </nav>
+                            </div>
                         <!-- </div> -->
 
                         <script type="text/javascript">
@@ -194,7 +181,7 @@
                         </script>
                      
                     <!-- </div> -->
-                </header>
+                </div>
 
             <!-- <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
                 <div class="container">

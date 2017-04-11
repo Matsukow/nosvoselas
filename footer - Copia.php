@@ -15,9 +15,9 @@
             </span>
             
             <div class="box-infos-footer">
-                <h4 id="email" class="infos-footer"><a href="mailto:nosvoselasestudiodesign@gmail.com">nosvoselasestudiodesign@gmail.com</a></h4>
-                <h4 id="telefone" class="infos-footer">11 98790 1421 | 11 96505 2283</h4> 
-                <h4 id="site" class="infos-footer"><a href="https://www.facebook.com/nosvoselas" target="_blank">facebook.com/nosvoselas</a></h4>
+                <h4 id="email"><a href="mailto:nosvoselasestudiodesign@gmail.com">nosvoselasestudiodesign@gmail.com</a></h4>
+                <h4 id="telefone">11 98790 1421 | 11 96505 2283</h4> 
+                <h4 id="site"><a href="https://www.facebook.com/nosvoselas" target="_blank">facebook.com/nosvoselas</a></h4>
             </div>
 
             <!-- <img src="images/mao2-edit.png" id="footer-img1" class="seletor" /> -->
