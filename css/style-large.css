@@ -92,11 +92,11 @@
 	   box-sizing: border-box;
 }
 html{
-	overflow-x: hidden;
-	overflow-y: scroll;
+/*	overflow-x: hidden;
+	overflow-y: scroll;*/
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 html, body{
 	max-width: 100%;
@@ -153,6 +153,7 @@ img {max-width: 100%;}
 	float: left;
 	display: inline-block;
 	width: 100%;
+	height: 0px;
 }
 .nav-menu ul{
 	list-style: none;
@@ -280,7 +281,7 @@ img {max-width: 100%;}
 	top: -0.5vw;
 	margin: 0;
 }
-.pg1 h3, .pg1 h4{
+.pg1 h3, .pg1 h1{
 	color: black;
 	float: left;
 	position: relative;
@@ -292,7 +293,7 @@ img {max-width: 100%;}
 	margin: 4% 0 0 42%;
 	font-size: 2vw;
 }
-.pg1 h4{
+.pg1 h1{
 	margin: 0 0 0 42%;
 	width: 30%;
 	font-size: 0.957vw;
@@ -302,7 +303,7 @@ img {max-width: 100%;}
 	position: relative;
 	clear: both;
 	font-family: 'blogger_sansregular';
-	font-size: 4.8vw;
+	font-size: 3.8vw;
 	color: black;
 	margin-left: 45%;
 	width: 60px;
@@ -614,18 +615,18 @@ img {max-width: 100%;}
 }
 .portifa-title{
 	float: right;
-	margin: 10% 0 0 0;
+	margin: 2% 0 0 0;
 	color: #000;
 	font-size: 3.5vw;
 	font-family: "high_tidebold";
 	position: absolute;
-	left: 42%;
+	left: 37%;
 	z-index: 10;
 }
 .texto-portifa-2{
 	float: left;
 	position: absolute;
-	margin: 16% 0 0 0;
+	margin: 8% 0 0 0;
 	font-family: 'blogger_sansregular';
 	font-size: 25px;
 	left: 44vw;
@@ -718,7 +719,7 @@ img {max-width: 100%;}
 	cursor: default;
 }
 #footer{
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
 	background: #000;
 	position: relative;
@@ -865,6 +866,8 @@ img {max-width: 100%;}
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 2% 0;
+  padding-left: 4%;
   overflow: auto;
   background-color: black;
 }
@@ -875,8 +878,8 @@ img {max-width: 100%;}
 	background-color: black;
 	margin: auto;
 	padding: 0;
-	width: 90%;
-	top: -40px;
+	width: 100%;
+	/*top: -40px;*/
 	overflow: auto;
 /*	width: auto;
 	height: auto;*/
@@ -886,11 +889,12 @@ img {max-width: 100%;}
 /* The Close Button */
 .fechar {
   color: white;
-  clear: both;
-  margin: 0 auto;
-  top: -40px;
-  right: -900px;
-  font-size: 35px;
+  position: relative;
+  top: -5%; 
+  margin: 0;
+  margin: 0 1.5% 0 0;
+  float: right;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -1025,8 +1029,6 @@ img.hover-shadow {
 
 .port-ora-paes-loja{
 	overflow-y: none;
-}
-.port-ora-paes-loja{
 	float: left;
 	position: relative;
 	height: 2060px;
@@ -1034,79 +1036,118 @@ img.hover-shadow {
 	background: #FFF8EB;
 }
 .port-ora-paes-loja .texto-principal{
-	margin-top: 130px;
-}
-.port-ora-paes-loja span{
 	float: left;
 	position: relative;
+	/*background: #ff0;*/
+	width: 100%;
+	height: 9%;
+	/*margin-top: 10%;*/
+	margin-top: 130px;
+}
+.port-ora-paes-loja h1{
+	float: left;
+	position: absolute;
 	font-family: "high_tidebold";
 	font-size: 40px;
+	width: 100%;
+	text-align: center;
 	/*font-size: 3vw;*/
 	letter-spacing: 10px;
 	/*margin: 40px 0 0 400px;*/
-	margin: 40px 0 0 30%;
+	margin: 2% 0 0 0;
+	/*background: #f00;*/
 }
-.port-ora-paes-loja h3{
-	font-family: "blogger_sansregular";
-	margin: 0 auto;
-	font-size: 20px;
-	position: absolute;
-	bottom: -100px;
-	left: 120px;
-}
-.port-ora-paes-loja h4{
+.port-ora-paes-loja h2{
 	float: left;
-	position: relative;
+	position: absolute;
 	font-family: "high_tidesans";
 	font-size: 14px;
+	/*background: #f00;*/
+	width: 100%;
+	text-align: center;
 	/*font-size: 1.1vw;*/
 	/*margin: 10px 0 0 430px;*/
-	margin: 10px 0 0 31%;
+	/*margin: 5.7% 0 0 0;*/
+	margin: 80px 0 0 0;
 }
-.port-ora-paes-loja h5{
+.port-ora-paes-loja h3{
 	float: left;
-	position: relative;
+	position: absolute;
 	/*text-align: justify;*/
 	text-align: center;
 	font-family: "blogger_sansregular";
-	font-size: 14px;
-	/*font-size: 1vw;*/
+	font-size: 15px;
+	/*font-size: 1.1vw;*/
 	/*background: #f00;*/
-	margin: 15px 0 0 330px;
-	width: 600px;
+	height: 80px;
+	/*margin: 7.5% 0 0 0;*/
+	margin: 110px 0 0 0;
+	/*padding: 0 25%;*/
+	padding: 0 23vw;
+	width:  100%;
+}
+.imagens-port-ora-paes-loja{
+	float: left;
+	/*margin-left: 17%;*/
+	padding-left: 18%;
+	width: 100%;
+	/*background: #f00;*/
 }
 .imagens-port-ora-paes-loja #img-1, .imagens-port-ora-paes-loja #img-2, .imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-4, .imagens-port-ora-paes-loja #img-5, .imagens-port-ora-paes-loja #img-6, .imagens-port-ora-paes-loja #img-7, .imagens-port-ora-paes-loja #img-8, .imagens-port-ora-paes-loja #img-9{
 	float: left;
-	position: relative;	
+	/*position: absolute;*/
 	border: 1px solid #000;
 }
 .imagens-port-ora-paes-loja #img-1{
-	margin: 30px 0 0 210px;
+	margin: 2% 0 0 0;
+	/*position: absolute;*/
+	/*background: #f00;*/
 }
 .imagens-port-ora-paes-loja #img-2{
-	margin: 30px 0 0 15px;
+	margin: 2% 0 0 1%;
 }
 .imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-5{
-	margin: 15px 0 0 210px;
+	margin: 1% 0 0 0;	
+}
+.imagens-port-ora-paes-loja #img-5{
+	position: relative;
 }
 .imagens-port-ora-paes-loja #img-6{
-	position: relative;
-	margin: 0 0 0 210px;
-	top: -270px;
+	position: absolute;
+	float: left;
+	/*margin: 21.85% 0 0 0;*/
+	margin-top: 297px;
+	/*margin-top: 26.7vw;*/
+	/*left: 16.9%;*/
+	left: 16.9vw;
+	/*left: 190px;*/
+	/*top: -20vw;*/
 }
+.imagens-port-ora-paes-loja #img-7{
+
+}
+
 .imagens-port-ora-paes-loja #img-4, .imagens-port-ora-paes-loja #img-7{
-	margin: 15px 0 0 15px;
+	margin: 1% 0 0 1%;
 }
 .imagens-port-ora-paes-loja #img-8{
 	/*margin: 15px 0 0 164px;*/
-	left: -415px;
-	margin-top: 15px;
+	/*left: -30.5vw;*/
+	/*position: absolute;*/
+	float: left;
+	margin-top: 1%;
 }
 .imagens-port-ora-paes-loja #img-9{
-	position: relative;
-	margin: 15px 0 0 15px;
-	left: 774px;
-	top: -371px;
+	float: left;
+	/*position: absolute;*/
+	margin: 1% 0 0 1%;
+	left: 58.7vw;
+	top: -27.1vw;
+}
+
+.container-flex{
+	/*display: flex;*/
+	/*width: 100%;*/
 }
 
 /*
@@ -1541,22 +1582,21 @@ img.hover-shadow {
 		#footer .botao-topo{
 			padding-top: 1%;
 		}
+		.port-ora-paes-loja{
+			width: 100%;
+		}
+		.imagens-port-ora-paes-loja{
+			padding-left: 5%;
+		}
+		.imagens-port-ora-paes-loja #img-6{
+			margin-top: 297px;
+			left: 3.5vw;
+		}
 	}
 
 	@media screen and (max-width: 1024px){
 		.pg1{
 			height: 600px;
-		}
-	}
-
-	@media screen and (max-width: 940px){
-
-		#header .logo-header{
-			float: left;
-			margin: 2% 0 10% 5%;
-		}
-		.pg1 .botao-navegar{
-			font-size: 50px;
 		}
 	}
 
@@ -1638,6 +1678,48 @@ img.hover-shadow {
 			position: absolute;
 			height: 0px;
 			margin-left: 7%;
+		}
+	}
+
+	@media screen and (max-width: 940px){
+
+		#header .logo-header{
+			float: left;
+			margin: 2% 0 10% 5%;
+		}
+		.pg1 .botao-navegar{
+			font-size: 50px;
+		}
+		.imagens-port-ora-paes-loja{
+			padding-left: 3%;
+		}
+		.imagens-port-ora-paes-loja #img-6{
+			margin-top: 297px;
+			left: 1.4vw;
+		}
+		.imagens-port-ora-paes-loja #img-1,
+		.imagens-port-ora-paes-loja #img-2,
+		.imagens-port-ora-paes-loja #img-3,
+		.imagens-port-ora-paes-loja #img-4,
+		.imagens-port-ora-paes-loja #img-5,
+		.imagens-port-ora-paes-loja #img-6,
+		.imagens-port-ora-paes-loja #img-7,
+		.imagens-port-ora-paes-loja #img-8,
+		.imagens-port-ora-paes-loja #img-9{
+
+		}
+		.imagens-port-ora-paes-loja{
+			
+		}
+	}
+
+	@media screen and (max-width: 910px){
+		.imagens-port-ora-paes-loja{
+			padding-left: 2%;
+		}
+		.imagens-port-ora-paes-loja #img-6{
+			margin-top: 297px;
+			left: 0.3vw;
 		}
 	}
 
@@ -1750,19 +1832,52 @@ img.hover-shadow {
 		.descricao-portfolios{
 			left: 0.8vw;
 		}
+		.port-ora-paes-loja .texto-principal{
+			padding-top: 2%;
+			height: 10%;
+		}
+	}
+
+	@media screen and (max-width: 862px){
+		.port-ora-paes-loja{
+			height: 3740px;
+		}
+		.port-ora-paes-loja .texto-principal{
+			height: 7%;
+		}
+		.imagens-port-ora-paes-loja{
+			padding-left: 18%;
+		}
+		.imagens-port-ora-paes-loja #img-2, .imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-9{
+			margin-left: 18%;
+		}
+		.imagens-port-ora-paes-loja #img-5, .imagens-port-ora-paes-loja #img-6{
+			margin-left: 11%;
+		}
+		.imagens-port-ora-paes-loja #img-7{
+			margin-left: 8.5%;
+		}
+		.imagens-port-ora-paes-loja #img-6{
+			position: relative;
+			margin-top: 1%;
+			left: 0;
+		}
+		.imagens-port-ora-paes-loja #img-9{
+			margin-bottom: 0;
+		}
 	}
 
 	@media screen and (max-width: 840px) {
 		.texto-pg3{
 			font-size: 20px;
 		}
-		.pg4 .texto-portifa-2{
-			margin: 17% 0 0 0;
+		 .pg4 .texto-portifa-2{
+			/*margin: 17% 0 0 0;*/
 			font-size: 22px;
-		}
+		} 
 		.portfolio-cx1{
 			padding-left: 3%;
-			margin-top: 6%;
+			/*margin-top: 6%;*/
 		}
 		.portfolio-cx1 .port-5{
 			margin-left: 0;
@@ -1861,6 +1976,12 @@ img.hover-shadow {
 		#footer .box-infos-footer{
 			margin-left: 0%;
 		}
+		.port-ora-paes-loja .texto-principal{
+			height: 6%;
+		}
+		.port-ora-paes-loja h3{
+			padding: 0 10vw;
+		}
 	}
 
 	@media screen and (max-width: 700px){
@@ -1879,6 +2000,9 @@ img.hover-shadow {
 		}	
 		.infos-footer{
 			margin-left: 35%;
+		}
+		.imagens-port-ora-paes-loja{
+			padding-left: 5%;
 		}
 	}
 
@@ -1997,6 +2121,9 @@ img.hover-shadow {
 		}
 		.descricao-portfolios{
 			left: 1vw;
+		}
+		.imagens-port-ora-paes-loja{
+			padding-left: 3%;
 		}
 	}
 

@@ -5,13 +5,13 @@
         <!-- Fim container -->
         
         <!-- Início Footer -->
-        <div id="footer">
+        <footer id="footer">
             <a href="#pg1"><h3 class="botao-topo">▲</h3></a>
         	<span>
-            <img src="images/mao2-edit.png" id="footer-img1" class="seletor" />
-            <p class="p1">GOSTOU?</p>
-            <p class="p2">BORA MARCAR</p>
-            <p class="p3">UMA CONVERSA?</p>
+                <img src="images/mao2-edit.png" id="footer-img1" class="seletor" />
+                <p class="p1">GOSTOU?</p>
+                <p class="p2">BORA MARCAR</p>
+                <p class="p3">UMA CONVERSA?</p>
             </span>
             
             <div class="box-infos-footer">
@@ -21,7 +21,7 @@
             </div>
 
             <!-- <img src="images/mao2-edit.png" id="footer-img1" class="seletor" /> -->
-        </div>
+        </footer>
         <!-- Fim Footer -->
 
     </body>

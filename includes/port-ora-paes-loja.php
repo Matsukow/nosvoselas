@@ -1,20 +1,61 @@
-<div id="pg1">
-</div>
+<section id="pg1"></section>
 
-<div class="port-ora-paes-loja">
+<section class="port-ora-paes-loja">
 	
-	<div class="texto-principal">
-		<span>LOJA • ORA PÃES</span>
+	<section class="texto-principal">
+		<h1>LOJA • ORA PÃES</h1>
 		<!-- <h3 class="rotate">Clique nas fotos para ampliá-las <strong>;)</strong></h3> -->
-		<h4>Identidade Visual, Ambientação, Fotografia, Web Design </h4>
-		<h5>No projeto de identidade visual da ORA PÃES, empresa especialista em panificação com os sabores de Portugal que possui uma fábrica e uma loja localizadas na zona sul de São Paulo, foram desenvolvidos materiais como cardápio, flyer, catálogos de produtos, website e a sinalização da loja. Uma comunicação simples e acessível foi a base para toda a criação.</h5>
-	</div>
+		<h2>Identidade Visual, Ambientação, Fotografia, Web Design </h2>
+		<h3>No projeto de identidade visual da ORA PÃES, empresa especialista em panificação com os sabores de Portugal que possui uma fábrica e uma loja localizadas na zona sul de São Paulo, foram desenvolvidos materiais como cardápio, flyer, catálogos de produtos, website e a sinalização da loja. Uma comunicação simples e acessível foi a base para toda a criação.</h3>
+	</section>
 
-	<div class="imagens-port-ora-paes-loja">
+	<section class="imagens-port-ora-paes-loja">
 		
-		<div class="row">
-			
-		<img src="images/foto-pequena/1.png" onclick="openModal();currentSlide(1)" class="cursor-pointer" id="img-1" />
+		<!-- <div class="row"> -->
+		<div class="container-flex">
+		
+		<section class="row">
+			<div class="col-12">
+				<img src="images/foto-pequena/1.png" onclick="openModal();currentSlide(1)" class="cursor-pointer" id="img-1" />
+				<img src="images/foto-pequena/2.png" onclick="openModal();currentSlide(2)" class="cursor-pointer" id="img-2" />
+			</div>
+		</section>
+		
+		<section class="row">
+			<div class="col-12">
+				<img src="images/foto-pequena/3.jpg" onclick="openModal();currentSlide(3)" class="cursor-pointer" id="img-3" />
+				<img src="images/foto-pequena/4.jpg" onclick="openModal();currentSlide(4)" class="cursor-pointer" id="img-4" />
+			</div>
+		</section>
+		
+		<section class="row">
+			<div class="col-6">
+				<img src="images/foto-pequena/5.jpg" onclick="openModal();currentSlide(5)" class="cursor-pointer" id="img-5" />
+				<img src="images/foto-pequena/6.jpg" onclick="openModal();currentSlide(7)" class="cursor-pointer" id="img-6" />
+				<img src="images/foto-pequena/7.jpg" onclick="openModal();currentSlide(6)" class="cursor-pointer" id="img-7" />
+			</div>
+			<div class="col-6">
+				<!-- <img src="images/foto-pequena/6.jpg" onclick="openModal();currentSlide(7)" class="cursor-pointer" id="img-6" /> -->
+				 <!-- <img src="images/foto-pequena/7.jpg" onclick="openModal();currentSlide(6)" class="cursor-pointer" id="img-7" /> -->
+			</div>
+		</section>
+
+	<!-- 	<section class="row">
+			<div class="col-6">
+			 	<img src="images/foto-pequena/7.jpg" onclick="openModal();currentSlide(6)" class="cursor-pointer" id="img-7" />
+			</div>
+		</section> -->
+
+		<section class="row">
+			<div class="col-12">
+				<img src="images/foto-pequena/8.jpg" onclick="openModal();currentSlide(8)" class="cursor-pointer" id="img-8" />
+				<img src="images/foto-pequena/9.jpg" onclick="openModal();currentSlide(9)" class="cursor-pointer" id="img-9" />
+			</div>
+		</section>
+
+		</div>
+
+<!-- 		<img src="images/foto-pequena/1.png" onclick="openModal();currentSlide(1)" class="cursor-pointer" id="img-1" />
 		<img src="images/foto-pequena/2.png" onclick="openModal();currentSlide(2)" class="cursor-pointer" id="img-2" />
 		<img src="images/foto-pequena/3.jpg" onclick="openModal();currentSlide(3)" class="cursor-pointer" id="img-3" />
 		<img src="images/foto-pequena/4.jpg" onclick="openModal();currentSlide(4)" class="cursor-pointer" id="img-4" />
@@ -22,7 +63,7 @@
 		<img src="images/foto-pequena/7.jpg" onclick="openModal();currentSlide(6)" class="cursor-pointer" id="img-7" />
 		<img src="images/foto-pequena/6.jpg" onclick="openModal();currentSlide(7)" class="cursor-pointer" id="img-6" />
 		<img src="images/foto-pequena/8.jpg" onclick="openModal();currentSlide(8)" class="cursor-pointer" id="img-8" />
-		<img src="images/foto-pequena/9.jpg" onclick="openModal();currentSlide(9)" class="cursor-pointer" id="img-9" />
+		<img src="images/foto-pequena/9.jpg" onclick="openModal();currentSlide(9)" class="cursor-pointer" id="img-9" /> -->
 		
 		<div id="myModal" class="modal-slides">
 		  <span class="fechar cursor" onclick="closeModal()">&times;</span>
@@ -142,7 +183,8 @@
 
                   var scrollBarWidth = window.innerWidth + document.body.offsetWidth;
                    $('body').css({
-                      marginRight: scrollBarWidth,
+                      // marginRight: scrollBarWidth,
+                      marginRight: 0,
                       overflowY: 'auto'
                    });
                 }
@@ -175,10 +217,11 @@
                   dots[slideIndex-1].className += " ativo";
                   captionText.innerHTML = dots[slideIndex-1].alt;
                 }
+
             </script>
 
-		</div>
+		<!-- </div> -->
 		
-	</div>
+	</section>
 
-</div>
+</section>

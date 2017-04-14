@@ -2,25 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <meta name="description" content="Descrição">
-        <meta name="keywords" content="Design">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="Daniel André">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="GpXW3bF85yskYqiuECaU6YWAlSi0GxGjyVQI8Dad_t4" />  
+        <meta name="description" content="Design de qualidade acessível e descomplicado para micro e pequenas empresas" />
+        <meta name="keywords" content="Estúdio de Design, Design," />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Daniel André" />
 
         <link rel="icon" href="images/logo-invert.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="images/logo-invert.ico" type="image/x-icon" />
-        
+        <link rel="shortcut icon" href="images/logo-invert.ico" type="image/x-icon" />        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style-large.css"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-        <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/> -->
-        
+
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
 
         <script type="text/javascript" src="js/jquery-1.4.3.js"></script>
         
@@ -92,7 +88,7 @@
         </script> -->
 
         <!-- <script type="text/javascript" src="js/funcoes.js"></script> -->
-        <title>nós vós elas</title>
+        <title>nós vós elas - Estúdio de Design</title>
     </head>
  
     <body>
@@ -113,10 +109,10 @@
                                     <!-- </div> -->
                                     
                                     <!-- <div class="col-9"> -->
-                                        <li><a href="?pg=home" id="botao">HOME</a></li>
-                                        <li><a href="?pg=home#pg2" id="botao-grande">QUEM SOMOS</a></li>
-                                        <li><a href="?pg=home#pg3"  id="botao-grande">PORTFOLIO</a></li>
-                                        <li><a href="#footer" id="botao">CONTATO</a></li>
+                                        <li><a href="?pg=home" id="botao" class="seletor">HOME</a></li>
+                                        <li><a href="?pg=home#pg2" id="botao-grande" class="seletor">QUEM SOMOS</a></li>
+                                        <li><a href="?pg=home#pg3"  id="botao-grande" class="seletor">PORTFOLIO</a></li>
+                                        <li><a href="#footer" id="botao" class="seletor">CONTATO</a></li>
                                     <!-- </div> -->
 
                                   <!--   <li><a href="?pg=home"><img src="images/logo.png" class="logo-header seletor" /></a></li>
