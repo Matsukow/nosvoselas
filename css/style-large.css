@@ -1,13 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+.bcg-teste{
+	background: #f00;
+}
+
 @font-face {
     font-family: 'amadaregular';
     src: url('../fonte/blogger/amada-regular-webfont.woff2') format('woff2'),
          url('../fonte/blogger/amada-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'high_tidebold';
@@ -91,17 +94,16 @@
 	 -moz-box-sizing: border-box;
 	   box-sizing: border-box;
 }
-html{
-/*	overflow-x: hidden;
-	overflow-y: scroll;*/
+/*html{
+	overflow-x: hidden;
 }
-body {
+body{
     overflow-x: hidden;
-}
+}*/
 html, body{
 	max-width: 100%;
-	/*overflow-x: hidden;*/
-	/*overflow-y: visible;*/
+	overflow-x: hidden;
+	/*overflow-y: hidden;*/
 	/*height:100%;*/
 
 	/*ESTES 2 OVERFLOWS AJUDARAM A CONSERTAR O PROBLEMA DA BARRA DUPLA NO FIREFOX*/
@@ -251,6 +253,7 @@ img {max-width: 100%;}
 		PRIMEIRA PÁGINA 
 */
 .painel-superior{
+	/*height: 140px;*/
 	height: 20px;
 	width: 100%;
 	background: #000;
@@ -260,6 +263,8 @@ img {max-width: 100%;}
 	width: 100vw;
 	background-image: url('../images/bg-1_1366px.jpg');
 	background-repeat: no-repeat;
+	/*background-position: center;
+	background-size: cover;*/
 	background-size: 100%;
 	position: relative;
 	margin: 0;
@@ -351,11 +356,11 @@ img {max-width: 100%;}
 	top: -2.1vw;
 	color: black;
 }
-.pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3, .pg2 #caixa-texto-topo h4{
+.pg2 #caixa-texto-topo h1, .pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3{
 	margin-top: 10%;
 	margin-left: 25%;
 }
-.pg2 #caixa-texto-topo h2{
+.pg2 #caixa-texto-topo h1{
 	font-family: "high_tidebold";
 	text-align: justify;
 	width: 630px;
@@ -363,7 +368,7 @@ img {max-width: 100%;}
 	letter-spacing: 0.2vw;
 	font-size: 16px;
 }
-.pg2 #caixa-texto-topo h3{
+.pg2 #caixa-texto-topo h2{
 	font-family: "high_tidesans";
 	text-align: justify;
 	font-size: 14px;
@@ -373,7 +378,7 @@ img {max-width: 100%;}
 	margin-top: 0.3%;
 	margin-right: 30%;
 }
-.pg2 #caixa-texto-topo h4{
+.pg2 #caixa-texto-topo h3{
 	font-family: 'blogger_sanslight';
 	font-size: 16px;
 	width: 60%;
@@ -381,7 +386,7 @@ img {max-width: 100%;}
 	text-align: justify;
 	letter-spacing: 0.1vw;
 }
-.pg2 #caixa-texto-topo h4 strong{
+.pg2 #caixa-texto-topo h3 strong{
 	font-family: 'blogger_sansbold';
 }
 .pg2 #caixa-texto-topo{
@@ -466,9 +471,10 @@ img {max-width: 100%;}
 	min-width: 220px;
 	height: 60%;
 	border: 1px solid #000;
-	margin: 8% 0 2% 0;
+	/*margin: 3% 0 2% 0;*/
+	margin: 10% 0 2% 0;
 	position: relative;	
-	left: -15px;
+	left: -10px;
 	z-index: 10;
 	float: left;
 }
@@ -659,14 +665,14 @@ img {max-width: 100%;}
 	background-size: 16.3vw;
 }
 
-.portfolio-cx1 .port-1{	background-image: url('../images/1-portifa.jpg');}
-.portfolio-cx1 .port-2{	background-image: url('../images/2-portifa.jpg');}
-.portfolio-cx1 .port-3{	background-image: url('../images/3-portifa.jpg');}
-.portfolio-cx1 .port-4{	background-image: url('../images/4-portifa.jpg');}
-.portfolio-cx1 .port-5{	background-image: url('../images/5-portifa.jpg');}
-.portfolio-cx1 .port-6{	background-image: url('../images/6-portifa.jpg');}
-.portfolio-cx1 .port-7{	background-image: url('../images/7-portifa.jpg');}
-.portfolio-cx1 .port-8{	background-image: url('../images/8-portifa.jpg');}
+.portfolio-cx1 .port-1{background-image: url('../images/1-portifa.jpg');}
+.portfolio-cx1 .port-2{background-image: url('../images/2-portifa.jpg');}
+.portfolio-cx1 .port-3{background-image: url('../images/3-portifa.jpg');}
+.portfolio-cx1 .port-4{background-image: url('../images/4-portifa.jpg');}
+.portfolio-cx1 .port-5{background-image: url('../images/5-portifa.jpg');}
+.portfolio-cx1 .port-6{background-image: url('../images/6-portifa.jpg');}
+.portfolio-cx1 .port-7{background-image: url('../images/7-portifa.jpg');}
+.portfolio-cx1 .port-8{background-image: url('../images/8-portifa.jpg');}
 
 .portfolio-cx1 .port-1{
 	margin-top: 0.5vw;
@@ -721,6 +727,7 @@ img {max-width: 100%;}
 #footer{
 	/*height: 100%;*/
 	width: 100%;
+	min-height: 270px;
 	background: #000;
 	position: relative;
 	float: left;
@@ -867,13 +874,12 @@ img {max-width: 100%;}
   width: 100%;
   height: 100%;
   padding: 2% 0;
-  padding-left: 4%;
+  /*padding-left: 4%;*/
   overflow: auto;
   background-color: black;
-}
-
+}		
 /* Modal Content */
-.modal-content {
+.modal-content{
 	position: fixed;
 	background-color: black;
 	margin: auto;
@@ -883,38 +889,23 @@ img {max-width: 100%;}
 	overflow: auto;
 /*	width: auto;
 	height: auto;*/
-	max-width: 1200px;
+	/*margin-top: 10%;*/
+	/*max-width: 1200px;*/
+	max-width: 90%;
+	/*min-height: 95%; */
 }
 
 /* The Close Button */
 .fechar {
   color: white;
   position: relative;
-  top: -5%; 
+  /*top: -5%; */
+  top: -2vw;
   margin: 0;
   margin: 0 1.5% 0 0;
   float: right;
   font-size: 4vw;
-  font-weight: bold;
-}
-
-.fechar2 {
-  color: white;
-  clear: both;
-  margin: 0 auto;
-  top: -40px;
-  right: -1035px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.fechar3 {
-  color: white;
-  clear: both;
-  margin: 0 auto;
-  top: -40px;
-  right: -1035px;
-  font-size: 35px;
+  /*font-size: 50px;*/
   font-weight: bold;
 }
 
@@ -926,20 +917,24 @@ img {max-width: 100%;}
 }
 
 .mySlides {
-  display: none;
+	display: none;
+	overflow-y: hidden;
 }
 
 /* Next & previous buttons */
 .anterior,
 .proximo {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  padding: 60px;
-  margin-top: -50px;
+  /*padding: 60px;*/
+  padding: 5vw;
+  /*margin-top: -50px;*/
+  margin-top: -10%;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  /*font-size: 65px;*/
+  font-size: 4vw;
   transition: 0.6s ease;
   border-radius: 3px;
   user-select: none;
@@ -949,6 +944,7 @@ img {max-width: 100%;}
 .proximo {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: 7%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -970,20 +966,11 @@ img {max-width: 100%;}
 	color: white;
 	text-decoration: none;
 }
-/*.modal-slides:hover .anterior{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-decoration: none;	
-}
-.modal-slides:hover .proximo{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-decoration: none;	
-}*/
+
 /* Number text (1/3 etc) */
 .numbertext {
 	color: #f2f2f2;
-	font-size: 20px;
+	font-size: 2vw;
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
@@ -1021,133 +1008,165 @@ img.hover-shadow {
 	filter: brightness(80%);
 }
 
+/* NOVOS GLOBAIS COM FLEX BOX */
+.estilo-fonte-titulo{
+	font-family: "high_tidebold";
+	font-size: 40px;
+	letter-spacing: 10px;
+}
+.estilo-fonte-subtitulo{
+	font-family: "high_tidesans";
+	margin: 1rem auto;
+	font-size: 14px;
+}
+.estilo-fonte-descricao{
+	font-family: "blogger_sansregular";
+	font-size: 14px;
+	margin: 1rem auto;
+	max-width: 640px;
+	text-align: center;
+}
+.texto-principal{
+	margin-top: 12vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column nowrap;
+	overflow: hidden;
+}
+
+section.div-imagens{
+	position: relative;
+}
+.div-imagens{
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	overflow: hidden;
+}
+.imagens-port{
+	margin: 1rem auto;
+}
+
+/*GLOBAIS ANTIGOS DAS PAGINAS*/
+.titulo-pg-portfolios{
+	float: left;
+	position: absolute;
+	font-family: "high_tidebold";
+	font-size: 40px;
+	width: 100%;
+	letter-spacing: 10px;
+	margin: 2% 0 0 0;
+}
+.subtitulo-pg-portfolios{
+	float: left;
+	position: absolute;
+	font-family: "high_tidesans";
+	font-size: 14px;
+	width: 100%;
+	margin: 80px 0 0 0;
+}
+.descricao-pg-portfolios{
+	float: left;
+	position: relative;
+	font-family: "blogger_sansregular";
+	font-size: 15px;
+	height: 80px;
+	margin: 110px 0 0 0;
+	width: 100%;
+}
+.config-texto-principal{
+	margin: 140px 0 2% 12%;
+	float: left;
+}
+.config-texto-principal-margem-bottom{
+	margin-bottom: 0;
+}
+.retira-padding-left{
+	padding-left: 0;
+}
+.retira-padding-right{
+	padding-right: 0;
+}
+.div-imagens-portfolios{
+	width: 100%;
+	margin-left: 2.3%;
+	padding-top: 2%;
+}
+.config-imagens-sem-borda{
+	float: left;
+	position: relative;
+}
+.config-imagens-portfolio{
+	float: left;
+	position: relative;
+	border: 1px solid #000;
+}
+.margem-left-fotos{
+	margin-left: 1.6%;
+}
+.margem-right-fotos{
+	width: 10vw;
+}
+.margem-left-outra{
+	margin-left: 2.2%;
+}
+.margem-extra{
+	margin-left: 1.2%;
+}
+.margem-top-fotos{
+	margin-top: 1.6%;
+}
+.margem-top-outro{
+	margin-top: 1.3rem;
+}
+.margem-bottom-fotos{
+	margin-bottom: 1.6%;
+}
+.padding-right{
+	padding-right: 2rem;
+}
+.column-nowrap{
+	display: flex;
+	justify-content: flex-end;
+	/*flex-direction: row-reverse;*/
+	/* flex-wrap: wrap-reverse; */
+	/*align-items: baseline;*/
+	flex-flow: row wrap;
+	/*margin-bottom: 1rem;*/
+}
+.flex-start-item{
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+}
+.centralizar-items{
+	align-items: center;
+}
+.alinhar-esquerda{
+	display: flex;
+	justify-content: left;
+	flex-flow: row wrap;
+	align-self: right;
+	overflow: hidden;
+	/*margin-right: 2rem;*/
+}
+.borda-imagens{
+	border: 1px solid #000;
+}
+
 /*
 	
 	PAG. 1 - ORA PÃES (loja)
 
 */
 
-.port-ora-paes-loja{
-	overflow-y: none;
-	float: left;
-	position: relative;
-	height: 2060px;
-	width: 100%;
-	background: #FFF8EB;
-}
-.port-ora-paes-loja .texto-principal{
-	float: left;
-	position: relative;
-	/*background: #ff0;*/
-	width: 100%;
-	height: 9%;
-	/*margin-top: 10%;*/
-	margin-top: 130px;
-}
-.port-ora-paes-loja h1{
-	float: left;
-	position: absolute;
-	font-family: "high_tidebold";
-	font-size: 40px;
-	width: 100%;
-	text-align: center;
-	/*font-size: 3vw;*/
-	letter-spacing: 10px;
-	/*margin: 40px 0 0 400px;*/
-	margin: 2% 0 0 0;
-	/*background: #f00;*/
-}
-.port-ora-paes-loja h2{
-	float: left;
-	position: absolute;
-	font-family: "high_tidesans";
-	font-size: 14px;
-	/*background: #f00;*/
-	width: 100%;
-	text-align: center;
-	/*font-size: 1.1vw;*/
-	/*margin: 10px 0 0 430px;*/
-	/*margin: 5.7% 0 0 0;*/
-	margin: 80px 0 0 0;
-}
-.port-ora-paes-loja h3{
-	float: left;
-	position: absolute;
-	/*text-align: justify;*/
-	text-align: center;
-	font-family: "blogger_sansregular";
-	font-size: 15px;
-	/*font-size: 1.1vw;*/
-	/*background: #f00;*/
-	height: 80px;
-	/*margin: 7.5% 0 0 0;*/
-	margin: 110px 0 0 0;
-	/*padding: 0 25%;*/
-	padding: 0 23vw;
-	width:  100%;
-}
-.imagens-port-ora-paes-loja{
-	float: left;
-	/*margin-left: 17%;*/
-	padding-left: 18%;
-	width: 100%;
-	/*background: #f00;*/
-}
-.imagens-port-ora-paes-loja #img-1, .imagens-port-ora-paes-loja #img-2, .imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-4, .imagens-port-ora-paes-loja #img-5, .imagens-port-ora-paes-loja #img-6, .imagens-port-ora-paes-loja #img-7, .imagens-port-ora-paes-loja #img-8, .imagens-port-ora-paes-loja #img-9{
-	float: left;
-	/*position: absolute;*/
-	border: 1px solid #000;
-}
-.imagens-port-ora-paes-loja #img-1{
-	margin: 2% 0 0 0;
-	/*position: absolute;*/
-	/*background: #f00;*/
-}
-.imagens-port-ora-paes-loja #img-2{
-	margin: 2% 0 0 1%;
-}
-.imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-5{
-	margin: 1% 0 0 0;	
-}
-.imagens-port-ora-paes-loja #img-5{
-	position: relative;
-}
-.imagens-port-ora-paes-loja #img-6{
-	position: absolute;
-	float: left;
-	/*margin: 21.85% 0 0 0;*/
-	margin-top: 297px;
-	/*margin-top: 26.7vw;*/
-	/*left: 16.9%;*/
-	left: 16.9vw;
-	/*left: 190px;*/
-	/*top: -20vw;*/
-}
-.imagens-port-ora-paes-loja #img-7{
-
-}
-
-.imagens-port-ora-paes-loja #img-4, .imagens-port-ora-paes-loja #img-7{
-	margin: 1% 0 0 1%;
-}
-.imagens-port-ora-paes-loja #img-8{
-	/*margin: 15px 0 0 164px;*/
-	/*left: -30.5vw;*/
-	/*position: absolute;*/
-	float: left;
-	margin-top: 1%;
-}
-.imagens-port-ora-paes-loja #img-9{
-	float: left;
-	/*position: absolute;*/
-	margin: 1% 0 0 1%;
-	left: 58.7vw;
-	top: -27.1vw;
-}
-
-.container-flex{
-	/*display: flex;*/
-	/*width: 100%;*/
+@media screen and (max-width: 991px){
+	.margem-left-md-fotos{
+		margin-left: 1.6%;
+	}
+	.retira-padding-left{
+		padding-left: 1.5rem;
+	}
 }
 
 /*
@@ -1155,194 +1174,36 @@ img.hover-shadow {
 	PAG. 2 - SEMANA DA MULHER (EVENTO)
 
 */
-.port-semana-mulher-evento{
-	overflow-y: none;
-}
-.port-semana-mulher-evento{
-	float: left;
-	position: relative;
-	/*margin-top: 150px;*/
-	height: 2190px;
-	width: 100%;
-	background: #FFF8EB;
-}
-.port-semana-mulher-evento .texto-principal{
-	margin-top: 140px;
-}
-.port-semana-mulher-evento span{
-	float: left;
-	position: relative;
-	font-family: "high_tidebold";
-	font-size: 40px;
-	letter-spacing: 10px;
-	/*margin: 40px 0 0 400px;*/
-	margin: 40px 0 0 20%;
-}
-.port-semana-mulher-evento h3{
-	font-family: "blogger_sansregular";
-	margin: 0 auto;
-	font-size: 20px;
-	position: absolute;
-	bottom: -100px;
-	left: 70px;
-}
-.port-semana-mulher-evento h4{
-	float: left;
-	position: relative;
-	font-family: "high_tidesans";
-	font-size: 14px;
-	/*margin: 10px 0 0 430px;*/
-	margin: 10px 0 0 37%;
-}
-.port-semana-mulher-evento h5{
-	float: left;
-	position: relative;
-	/*text-align: justify;*/
-	text-align: center;
-	font-family: "blogger_sansregular";
-	font-size: 14px;
-	/*background: #f00;*/
-	margin: 15px 0 0 340px;
-	width: 600px;
-}
-.div-imagens-pg2{
-	/*border: 1px solid black;*/
-	margin: 0px 0 0 130px;
-	padding-left: 5%;
-	height: 1820px;
-	width: 80%;
-	padding: 0 auto;
-}
-.imagens-port-semana-mulher-evento #img-1, .imagens-port-semana-mulher-evento #img-2, .imagens-port-semana-mulher-evento #img-3, .imagens-port-semana-mulher-evento #img-4, .imagens-port-semana-mulher-evento #img-5, .imagens-port-semana-mulher-evento #img-6, .imagens-port-semana-mulher-evento #img-7, .imagens-port-semana-mulher-evento #img-8, .imagens-port-semana-mulher-evento #img-9, .imagens-port-semana-mulher-evento #img-11, .imagens-port-semana-mulher-evento #img-12, .imagens-port-semana-mulher-evento #img-13{
-	float: left;
-	position: relative;	
-	border: 1px solid #000;
-}
-.imagens-port-semana-mulher-evento #img-1{
-	margin: 30px 0 0 35px;
-}
-.imagens-port-semana-mulher-evento #img-2{
-	margin: 30px 0 0 15px;
-}
-.imagens-port-semana-mulher-evento #img-3, .imagens-port-semana-mulher-evento #img-5{
-	margin: 15px 0 0 35px;
-}
-.imagens-port-semana-mulher-evento #img-6{
-	position: relative;
-	margin: 15px 0 0 15px;
-	/*top: -270px;*/
-}
-.imagens-port-semana-mulher-evento #img-4, .imagens-port-semana-mulher-evento #img-7{
-	margin: 15px 0 0 15px;
-}
-.imagens-port-semana-mulher-evento #img-8{
-	margin-top: 15px;
-	margin-left: 35px;
-}
-.imagens-port-semana-mulher-evento #img-9{
-	position: relative;
-	margin: 15px 0 0 15px;
-}
-.imagens-port-semana-mulher-evento #img-10{
-	position: relative;
-	float: left;
-	margin: 15px 0 0 32px;
-}
-.imagens-port-semana-mulher-evento #img-11{
-	position: relative;
-	margin: 15px 0 0 15px;
-}
-.imagens-port-semana-mulher-evento #img-12{
-	position: relative;
-	clear: both;
-	margin: 10px 0 0 35px;
-}
-.imagens-port-semana-mulher-evento #img-13{
-	position: relative;
-	margin: 10px 0 0 25px;
-}
 
 /*
 	
 	PAG. 3 - SUPER NATURAL (CARDAPIO)
 
 */
-.port-super-natural-cardapio{
-	overflow-y: none;
-}
-.port-super-natural-cardapio{
-	float: left;
-	position: relative;
-	height: 1115px;
-	width: 100%;
-	background: #FFF8EB;
-}
-.port-super-natural-cardapio .texto-principal{
-	margin-top: 140px;
-}
-.port-super-natural-cardapio span{
-	float: left;
-	position: relative;
-	font-family: "high_tidebold";
-	font-size: 40px;
-	letter-spacing: 10px;
-	/*margin: 40px 0 0 400px;*/
-	margin: 40px 0 0 20%;
-}
-.port-super-natural-cardapio h3{
-	font-family: "blogger_sansregular";
-	margin: 0 auto;
-	font-size: 20px;
-	position: absolute;
-	bottom: -100px;
-	left: 70px;
-}
-.port-super-natural-cardapio h4{
-	float: left;
-	position: relative;
-	font-family: "high_tidesans";
-	font-size: 14px;
-	/*margin: 10px 0 0 430px;*/
-	margin: 10px 0 0 39%;
-}
-.port-super-natural-cardapio h5{
-	float: left;
-	position: relative;
-	/*text-align: justify;*/
-	text-align: center;
-	font-family: "blogger_sansregular";
-	font-size: 14px;
-	/*background: #f00;*/
-	margin: 15px 0 0 340px;
-	width: 600px;
-}
-.div-imagens-pg3{
-	/*border: 1px solid black;*/
-	margin: 0px 0 0 130px;
-	padding-left: 5%;
-	height: 1470px;
-	width: 80%;
-	padding: 0 auto;
-}
-.imagens-super-natural-cardapio #img-1, .imagens-super-natural-cardapio #img-2, 
-.imagens-super-natural-cardapio #img-3, .imagens-super-natural-cardapio #img-4{
-	float: left;
-	position: relative;	
-	border: 1px solid #000;
-}
-.imagens-super-natural-cardapio #img-1{
-	margin: 30px 0 0 35px;
-}
-.imagens-super-natural-cardapio #img-2{
-	margin: 30px 0 0 15px;
-}
-.imagens-super-natural-cardapio #img-3{
-	margin: 15px 0 0 35px;
-}
-.imagens-super-natural-cardapio #img-4{
-	margin: 15px 0 0 15px;
-}
 
+/*
+	
+	PAG. 4 - IDENTIDADE PADARIA
+
+*/
+
+/*
+	
+	PAG. 5 CARDAPIO ORA PAES
+
+*/
+
+/*
+	
+	PAG. 6 STAND BIFANAS
+
+*/
+
+/*
+	
+	PAG. 7 CARTAZ EVENTO
+
+*/
 
 	@media screen and (min-width: 1367px){
 
@@ -1369,14 +1230,14 @@ img.hover-shadow {
 		.pg1{
 			min-height: 100vh;
 		}
-		.pg2 #caixa-texto-topo h2{
+		.pg2 #caixa-texto-topo h1{
 			font-size: 1.2vw;
 		}
-		.pg2 #caixa-texto-topo h3{			
+		.pg2 #caixa-texto-topo h2{			
 			font-size: 1vw;
 			margin-right: 40vw;
 		}
-		.pg2 #caixa-texto-topo h4{
+		.pg2 #caixa-texto-topo h3{
 			font-size: 1.2vw;
 			width: 45vw;
 		}
@@ -1416,7 +1277,6 @@ img.hover-shadow {
 		.pg3 ul li p{
 			margin-top: 5px;
 		}
-
 	}
 	@media screen and (max-width: 1366px){
 		#botao, #botao-grande{
@@ -1425,10 +1285,23 @@ img.hover-shadow {
 		.pg1 h3{
 			font-size: 27px;
 		}
-		.pg1 h4{
+		.pg1 h1{
 			font-size: 12px;
-		}		
+		}
 	}
+
+	@media screen and (max-width:  1285px){
+		.proximo {
+		  margin-right: 6%;
+		}
+	}
+
+	@media screen and (max-width: 1200px){
+		.numbertext {
+			font-size: 20px;
+		}
+	}
+	
 
 	@media screen and (max-width: 1110px){
 
@@ -1582,16 +1455,20 @@ img.hover-shadow {
 		#footer .botao-topo{
 			padding-top: 1%;
 		}
-		.port-ora-paes-loja{
-			width: 100%;
+		#footer #email, #footer #telefone, #footer #site{
+			background-size: 18px 16px;
+			height: 18px;
 		}
-		.imagens-port-ora-paes-loja{
-			padding-left: 5%;
+		#footer{
+			min-height: 300px;
 		}
-		.imagens-port-ora-paes-loja #img-6{
-			margin-top: 297px;
-			left: 3.5vw;
+		.texto-principal{
+			margin-top: 140px;
 		}
+		.estilo-fonte-titulo{
+			font-size: 35px;
+		}
+
 	}
 
 	@media screen and (max-width: 1024px){
@@ -1679,6 +1556,16 @@ img.hover-shadow {
 			height: 0px;
 			margin-left: 7%;
 		}
+		.proximo {
+		  margin-right: 5%;
+		}
+		.estilo-fonte-titulo{
+			font-size: 30px;
+		}
+		.texto-principal{
+			margin-top: 17%;
+		}
+
 	}
 
 	@media screen and (max-width: 940px){
@@ -1690,36 +1577,8 @@ img.hover-shadow {
 		.pg1 .botao-navegar{
 			font-size: 50px;
 		}
-		.imagens-port-ora-paes-loja{
-			padding-left: 3%;
-		}
-		.imagens-port-ora-paes-loja #img-6{
-			margin-top: 297px;
-			left: 1.4vw;
-		}
-		.imagens-port-ora-paes-loja #img-1,
-		.imagens-port-ora-paes-loja #img-2,
-		.imagens-port-ora-paes-loja #img-3,
-		.imagens-port-ora-paes-loja #img-4,
-		.imagens-port-ora-paes-loja #img-5,
-		.imagens-port-ora-paes-loja #img-6,
-		.imagens-port-ora-paes-loja #img-7,
-		.imagens-port-ora-paes-loja #img-8,
-		.imagens-port-ora-paes-loja #img-9{
-
-		}
-		.imagens-port-ora-paes-loja{
-			
-		}
-	}
-
-	@media screen and (max-width: 910px){
-		.imagens-port-ora-paes-loja{
-			padding-left: 2%;
-		}
-		.imagens-port-ora-paes-loja #img-6{
-			margin-top: 297px;
-			left: 0.3vw;
+		.texto-principal{
+			margin-top: 18vw;
 		}
 	}
 
@@ -1727,7 +1586,7 @@ img.hover-shadow {
 
 		#header .logo-header{
 			float: left;
-			 margin: 2% 30% 2.5% 45%; 
+			margin: 2% 30% 2.5% 45%; 
 		}
 		#header{
 			height: 150px;
@@ -1832,38 +1691,13 @@ img.hover-shadow {
 		.descricao-portfolios{
 			left: 0.8vw;
 		}
-		.port-ora-paes-loja .texto-principal{
-			padding-top: 2%;
-			height: 10%;
-		}
-	}
 
-	@media screen and (max-width: 862px){
-		.port-ora-paes-loja{
-			height: 3740px;
+		.fechar{
+			font-size: 40px;
 		}
-		.port-ora-paes-loja .texto-principal{
-			height: 7%;
-		}
-		.imagens-port-ora-paes-loja{
-			padding-left: 18%;
-		}
-		.imagens-port-ora-paes-loja #img-2, .imagens-port-ora-paes-loja #img-3, .imagens-port-ora-paes-loja #img-9{
-			margin-left: 18%;
-		}
-		.imagens-port-ora-paes-loja #img-5, .imagens-port-ora-paes-loja #img-6{
-			margin-left: 11%;
-		}
-		.imagens-port-ora-paes-loja #img-7{
-			margin-left: 8.5%;
-		}
-		.imagens-port-ora-paes-loja #img-6{
-			position: relative;
-			margin-top: 1%;
-			left: 0;
-		}
-		.imagens-port-ora-paes-loja #img-9{
-			margin-bottom: 0;
+
+		.texto-principal{
+			margin-top: 20%;
 		}
 	}
 
@@ -1871,24 +1705,16 @@ img.hover-shadow {
 		.texto-pg3{
 			font-size: 20px;
 		}
-		 .pg4 .texto-portifa-2{
-			/*margin: 17% 0 0 0;*/
+		.pg4 .texto-portifa-2{
 			font-size: 22px;
 		} 
 		.portfolio-cx1{
 			padding-left: 3%;
-			/*margin-top: 6%;*/
 		}
 		.portfolio-cx1 .port-5{
 			margin-left: 0;
 		}
 	}
-
-/*	@media screen and (max-width: 840px){
-		.portfolio-cx1{
-			padding-left: 3%;
-		}
-	}*/
 
 	@media screen and (max-width: 780px){
 		.portfolio-cx1{
@@ -1906,7 +1732,7 @@ img.hover-shadow {
 	}
 
 	@media screen and (max-width: 768px){
-
+		
 		.nav-menu ul li:first-child{
 			margin: 1.5% 0 0.5% 5%;
 		}
@@ -1945,7 +1771,7 @@ img.hover-shadow {
 			margin-top: 20px;
 			width: 50vw;
 		}
-		.pg1 h4{
+		.pg1 h1{
 			font-size: 12px;
 			width: 40vw;
 		}
@@ -1964,7 +1790,7 @@ img.hover-shadow {
 		.pg3 .page3-img1{
 			width: 20vw;
 		}
-		.pg2 #caixa-texto-topo h4{
+		.pg2 #caixa-texto-topo h3{
 			width: 60vw;
 		}
 		.bloco-passo-1{
@@ -1976,11 +1802,11 @@ img.hover-shadow {
 		#footer .box-infos-footer{
 			margin-left: 0%;
 		}
-		.port-ora-paes-loja .texto-principal{
-			height: 6%;
+		.texto-principal{
+			margin-top: 25vw;
 		}
-		.port-ora-paes-loja h3{
-			padding: 0 10vw;
+		.estilo-fonte-titulo{
+			font-size: 20px;
 		}
 	}
 
@@ -2001,8 +1827,20 @@ img.hover-shadow {
 		.infos-footer{
 			margin-left: 35%;
 		}
-		.imagens-port-ora-paes-loja{
-			padding-left: 5%;
+		.pg4 .texto-portifa-2{
+			margin-top: 10%;
+		}
+		.texto-principal{
+			margin-bottom: 30px;
+		}
+		.estilo-fonte-titulo{
+			font-size: 20px;
+		}
+		.reduzir-tamanho{
+			height: 60vw;
+		}
+		.reduzir-largura{
+			width: 85vw;
 		}
 	}
 
@@ -2029,7 +1867,7 @@ img.hover-shadow {
 		.pg2 span{
 			margin: 5% 30% 0 0;
 		}
-		.pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3, .pg2 #caixa-texto-topo h4{
+		.pg2 #caixa-texto-topo h1, .pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3{
 			margin-left: 15%;
 		}
 		.pg2 .moldura-texto{
@@ -2066,6 +1904,12 @@ img.hover-shadow {
 		.portfolio-cx1{
 			margin-left: 5%;
 		}
+		.estilo-fonte-titulo{
+			letter-spacing: 5px;
+		}
+		.port-semana-mulher-evento .estilo-fonte-titulo{
+			letter-spacing: 3px;
+		}
 	}
 
 	@media screen and (max-width: 600px){
@@ -2078,7 +1922,7 @@ img.hover-shadow {
 		.pg1 h3{
 			font-size: 4vw;
 		}
-		.pg1 h4{
+		.pg1 h1{
 			font-size: 2vw;
 		}
 		.bloco-passo-1, .pg3 #box-etapa-3{
@@ -2122,9 +1966,6 @@ img.hover-shadow {
 		.descricao-portfolios{
 			left: 1vw;
 		}
-		.imagens-port-ora-paes-loja{
-			padding-left: 3%;
-		}
 	}
 
 	@media screen and (max-width: 550px){
@@ -2135,11 +1976,23 @@ img.hover-shadow {
 			margin: 5% 0 0 8%;
 		}
 		.pg4 .texto-portifa-2{
+			margin-top: 13%;
 			font-size: 16px;
+		}
+		.estilo-fonte-titulo{
+			font-size: 16px;
+		}
+		.estilo-fonte-subtitulo{
+			font-family: "high_tidesans";
+			margin: 1rem auto;
+			font-size: 11px;
 		}
 	}
 
 	@media screen and (max-width: 480px){
+		body, html{
+			overflow-x: hidden;
+		}
 		#header .logo-header{
 			margin: 2.5% 0 1.5% 5%;
 		}
@@ -2150,7 +2003,7 @@ img.hover-shadow {
 			background-size: 100%;		
 			background-repeat: no-repeat;
 		}
-		.dropdown{
+		.dropdown{ 
 			margin: 6% 7% 0 0;
 		}
 		.painel-superior{
@@ -2169,7 +2022,7 @@ img.hover-shadow {
 		.pg1 span #mesmice{
 			font-size: 11vw;
 		}
-		.pg1 h4{
+		.pg1 h1{
 			font-size: 2.5vw;
 			margin-left: 29%;
 			width: 53%;
@@ -2196,7 +2049,7 @@ img.hover-shadow {
 			top: -7.1vw;
 			color: black;
 		}
-		.pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3, .pg2 #caixa-texto-topo h4{
+		.pg2 #caixa-texto-topo h1, .pg2 #caixa-texto-topo h2, .pg2 #caixa-texto-topo h3{
 			margin-left: 15%;
 		}
 		.pg2 .moldura-texto{
@@ -2238,7 +2091,7 @@ img.hover-shadow {
 			margin-left: 1.8%;
 		}
 		#footer{
-			height: 80vh;
+			min-height: 435px;
 		}
 		#footer span{
 			float: left;
@@ -2271,6 +2124,10 @@ img.hover-shadow {
 		#footer .botao-topo{
 			font-size: 40px;
 		}
+		#footer #email, #footer #telefone, #footer #site{
+			background-size: 6vw 5vw;
+			height: 22px;
+		}
 		.infos-footer{
 			background-size: 8vw;
 			/*background-position: 1vw 1vw;*/
@@ -2295,24 +2152,23 @@ img.hover-shadow {
 		#footer #footer-img1{
 			float: right;
 			position: absolute;
-			margin-left: 20%;
-			margin-top: 52%;
-			width: 400px;
+			margin-left: 33%;
+			margin-top: 39%;
+			width: 300px;
 			top: 0;
 		}
 		#footer .box-infos-footer{
 			float: left;
 			position: absolute;
-			/*background: #f00;*/
 			margin-right: 70%;
 			width: 100%;
-			margin-top: 50%;
+			margin-top: 40%;
 		}
 	}
 
 	@media screen and (max-width: 460px){
 		.pg2 #caixa-paulini{
-			margin: 5% 0 0 25%;
+			margin: 5% 0 0 30%;
 		}
 		.pg2 #caixa-paulini h5, .pg2 #caixa-quiqui h5{
 			margin-left: 8%;
@@ -2320,16 +2176,13 @@ img.hover-shadow {
 		.pg2 #caixa-quiqui{
 			left: 0;
 			position: absolute;
-			margin-left: 23.3%;
-			margin-top: 70%;
+			margin-left: 28.6%;
+			/*margin-top: 70%;*/
+			margin-top: 320px;
 			height: 295px;
 		}
 		.pg3{
-			/*margin-left: 4%;*/
-			margin-top: 38%;
-		}
-		.pg3 h2{
-			top: -10vw;
+			margin-top: 45%;
 		}
 		.bloco-passo-1{
 			margin-left: 18%;
@@ -2339,10 +2192,13 @@ img.hover-shadow {
 		}
 		.pg4 .texto-portifa-2{
 			font-size: 12px;
-			margin-top: 25%;
+			margin-top: 15%;
 		}
 		.portfolio-cx1{
 			top: -30px;
+		}
+		.estilo-fonte-titulo{
+			font-size: 14px;
 		}
 	}
 
@@ -2377,7 +2233,7 @@ img.hover-shadow {
 			margin-left: 30%;
 			margin-top: 15%;
 		}
-		.pg1 h4{
+		.pg1 h1{
 			margin-left: 30%;
 		}
 		.pg1 #page1-img2{
@@ -2399,25 +2255,36 @@ img.hover-shadow {
 			min-width: 200px;
 			background-position: 50% 3%;
 		}
-		.pg2 #caixa-quiqui{
-			margin-top: -5%;
-			position: relative;
-			margin-left: 48%;
-		}
 		.pg2 #caixa-paulini h5, .pg2 #caixa-quiqui h5{
 			letter-spacing: 0.1vw;
 			min-width: 170px;
 			padding-left: 1%;
 			margin-left: 7%;
 		}
+		.pg3{
+			margin-top: 55%;
+		}
+		.pg3 span, .pg3 .texto-pg3{
+			margin-left: 7%;
+		}
+		.bloco-passo-1, .lista-passos #box-etapa-3{
+			margin-left: 15%;
+		}
 		.portfolio-cx1{
-			margin-left: 4.5%;
+			margin-top: 3%;
+			margin-left: 2.5%;
 			padding-left: 2%;
 			width: 200px;
 			min-width: 410px;
 		}
 		.descricao-portfolios{
 			left: 2vw;
+		}
+		.texto-principal{
+			margin-top: 33vw;
+		}
+		.estilo-fonte-subtitulo{
+			font-size: 9px;
 		}
 	}
 
@@ -2427,14 +2294,20 @@ img.hover-shadow {
 		}
 	}
 
-	@media screen and (max-width: 385px){
+	@media screen and (max-width: 400px){
 		.portfolio-cx1{
 			margin-left: 1%;
-			padding-left: 2%;
+			padding-left: 1%;
 			width: 200px;
 			min-width: 410px;
 		}
-		
+	}
+
+	@media screen and (max-width: 385px){
+		.portfolio-cx1{
+			margin-left: -.5%;
+			padding-left: 0;
+		}
 	}
 
 	@media screen and (max-width: 375px){
@@ -2449,16 +2322,8 @@ img.hover-shadow {
 		.pg2 .moldura-texto{
 			margin-left: 6%;
 		}
-		.pg2 #caixa-paulini{
-			margin-left: 4.5%;
-			/*width: 22vw;*/
-		}
-		.pg2 #caixa-quiqui{
-			/*margin-top: 70%;*/
-			/*left: -5px;*/
-		}
 		.pg2 #caixa-paulini, .pg2 #caixa-quiqui{
-			min-width: 185px;
+			/*min-width: 185px;*/
 			background-position: 50% 3%;
 		}
 		.pg2 #caixa-paulini h5, .pg2 #caixa-quiqui h5{
@@ -2473,24 +2338,27 @@ img.hover-shadow {
 	
 		.pg4 .texto-portifa-2{
 			font-size: 12px;
-			margin-top: 26%;
+			/*margin-top: 26%;*/
 			left: 40vw;
 		}
 		.portfolio-cx1{
 			top: -20px;
 		}
-
-		.bloco-passo-1, .bloco-passo-1, .lista-passos #box-etapa-3{
+		.bloco-passo-1, .lista-passos #box-etapa-3{
 			margin-left: 10%;
 		}
+		.pg3{
+			margin-top: 70%;
+		}
 		.pg3 span{
+			margin-left: 13%;
 			margin-top: 25%;
 		}
 		.pg3 span h3{
 			margin-top: 8%;
 		}
-		.texto-pg3{
-			margin: 0 0 5% 10%;
+		.pg3 .texto-pg3{
+			margin: 0 0 5% 12%;
 			width: 85vw;
 			font-size: 19px;
 		}
@@ -2511,9 +2379,24 @@ img.hover-shadow {
 		}
 	}
 
+	@media screen and (max-width: 360px){
+		.texto-principal{
+			margin-top: 37vw;
+		}
+		.pg2 #caixa-paulini{
+			margin-left: 25%;
+		}
+		.pg2 #caixa-quiqui{
+			margin-left: 23%;
+		}
+	}
+
 	@media screen and (max-width: 330px){
 		.bloco-passo-1, .bloco-passo-1, .lista-passos #box-etapa-3{
-			margin-left: 6%;
+			margin-left: 7%;
+		}
+		.pg3 span, .pg3 .texto-pg3{
+			margin-left: 10%;
 		}
 	}
 
@@ -2525,22 +2408,22 @@ img.hover-shadow {
 			background-position: center;
 			margin: 0;
 		}
+		.blocos-passos, .lista-passos #box-etapa-3{
+			margin-left: 30%;
+		}
 		.pg2 .caixa-texto-meio h3{
 			font-size: 24px;
 		}
 		.pg2 #caixa-paulini, .pg2 #caixa-quiqui{
 			min-width: 200px;
 			background-position: 50% 3%;
-		}
-		.pg2 #caixa-paulini{
-			margin-left: 5%;
+			margin-left: 22%;
 		}
 		.pg2 #caixa-quiqui{
 			left: 0;
 			position: absolute;
-			margin-left: 37%;
-			margin-top: 95%;
 			height: 295px;
+			margin-left: 19.5%;
 		}
 		.pg2 #caixa-paulini h5, .pg2 #caixa-quiqui h5{
 			letter-spacing: 0.1vw;
@@ -2549,13 +2432,11 @@ img.hover-shadow {
 			margin-left: 7%;
 		}
 		.pg3{
-			/*background-size: cover;*/
-			margin-left: 4%;
 			margin-top: 50%;
 		}
 		.pg3 span{
 			margin: 0;
-			margin-left: 12%;
+			margin-left: 10%;
 			padding-top: 50%;
 		}
 		.pg3 span h3{
@@ -2564,10 +2445,14 @@ img.hover-shadow {
 		.texto-pg3{
 			font-size: 20px;
 		}
-	}
-
-	@media screen and (max-width: 319px){
-		.blocos-passos, .lista-passos #box-etapa-3{
-			margin-left: 30%;
+		.texto-principal{
+			margin-top: 40vw;
+		}
+		.estilo-fonte-titulo{
+			font-size: 12px;
+		}
+		.portfolio-cx1 .port-1, .portfolio-cx1 .port-3, .portfolio-cx1 .port-5, .portfolio-cx1 .port-7{
+			margin-left: 1.5%;
+			margin-top: 2%;
 		}
 	}
